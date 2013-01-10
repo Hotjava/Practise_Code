@@ -6,18 +6,20 @@ using System.Text;
 
 namespace WordCounter.FileReaders
 {
-    public class LineReaders : IFileReader
+    public class LineReaders : IFileReaFileReader
     {
-        public IList<string> ReadFile(string path)
+        public override  string ReadFile(string path)
         {
-            StreamReader reader = new StreamReader(File.Open(path,FileMode.Open));
-
-            List<string> words = new List<string>();
-
-            while (reader.ReadBlock())
+            StringBuilder sb  = new StringBuilder();
+            StreamReader reader;
+            using (reader = new StreamReader(File.Open(path, FileMode.Open)))
             {
-                
+                while (reader.Peek() >= 0)
+                {
+                   sb.Append(reader.ReadLine());
+                }
             }
+            return sb.ToString();
         }
     }
 }

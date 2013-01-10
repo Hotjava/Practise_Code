@@ -7,6 +7,6 @@ namespace WordCounter.FileReaders
 {
     public interface IFileReader
     {
-        IList<string> ReadFile(string path);
+        IList<strstring ReadFile(string path);
     }
 }

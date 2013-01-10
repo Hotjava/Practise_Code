@@ -36,6 +36,11 @@
             this.Lbl_Message = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
+   dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Word = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Count = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit);
+            // 
             // TxtFilePath
             // 
             this.TxtFilePath.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -93,11 +98,31 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13FdataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Word,
+            this.Count});
+            this.dataGridView1.Location = new System.Drawing.Point(13, 112);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(356, 240);
+            this.dataGridView1.TabIndex = 5;
+            // 
+            // Word
+            // 
+            this.Word.HeaderText = "Word";
+            this.Word.Name = "Word";
+            // 
+            // Count
+            // 
+            this.Count.HeaderText = "Count";
+            this.Count.Name = "Count" = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(395, 386);
             this.Controls.Add(this.Lbl_Message);
             this.Controls.Add(this.Btn_CountWord);
+            this.Controls.Add(thidataGridView1ord);
             this.Controls.Add(this.Btn_openFile);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TxtFilePath);
@@ -110,12 +135,20 @@
 
         #endregion
 
+        priva((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit()
+
         private System.Windows.Forms.TextBox TxtFilePath;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button Btn_openFile;
         private System.Windows.Forms.Button Btn_CountWord;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Label Lbl_Message;
+    }
+}
+
+    private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Word;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Count;
     }
 }
 
