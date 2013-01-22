@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{E65A2A86-DB9F-44E2-9493-A3DDE02103BF}</ProjectGuid>
+    <ProjectGuid>{48CD0D52-89CB-49DC-B202-70A64A7CBADE}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>EventTickets.Model</RootNamespace>
-    <AssemblyName>EventTickets.Model</AssemblyName>
+    <RootNamespace>Chap6.EventTickets.DataContract</RootNamespace>
+    <AssemblyName>Chap6.EventTickets.DataContract</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -33,6 +33,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -40,13 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Event.cs" />
-    <Compile Include="IEventRepository.cs" />
-    <Compile Include="TicketPurchase.cs" />
-    <Compile Include="TicketPurchaseFactory.cs" />
-    <Compile Include="TicketReservation.cs" />
+    <Compile Include="PurchaseTicketRequest.cs" />
+    <Compile Include="PurchaseTicketResponse.cs" />
+    <Compile Include="ReserveTicketResponse.cs" />
+    <Compile Include="Response.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TicketReservationFactory.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
