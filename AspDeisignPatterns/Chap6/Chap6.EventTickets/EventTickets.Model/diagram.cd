@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="EventTickets.Model.Event">
+    <Position X="8" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAGQAEAAAARAACAAIAAAASAAAAAAEBAAAAAAABAAIA=</HashCode>
+      <FileName>Event.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EventTickets.Model.TicketPurchase">
+    <Position X="10.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAABAAAAgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TicketPurchase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EventTickets.Model.TicketPurchaseFactory">
+    <Position X="5.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TicketPurchaseFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EventTickets.Model.TicketReservation">
+    <Position X="5.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAiAAAEAAAAACAAAAAABAAAAgAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>TicketReservation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EventTickets.Model.TicketReservationFactory" Collapsed="true">
+    <Position X="10.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TicketReservationFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="EventTickets.Model.IEventRepository">
+    <Position X="4.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IEventRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>
