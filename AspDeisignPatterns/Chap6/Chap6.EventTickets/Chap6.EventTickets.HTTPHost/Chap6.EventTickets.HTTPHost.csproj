@@ -57,7 +57,7 @@
     <Content Include="App_Data\EventTickets_log.ldf">
       <DependentUpon>EventTickets.mdf</DependentUpon>
     </Content>
-    <Content Include="Service1.svc" />
+    <Content Include="TicketService.svc" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -67,13 +67,18 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Service1.svc.cs">
-      <DependentUpon>Service1.svc</DependentUpon>
-    </Compile>
-    <Compile Include="IService1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Chap6.EventTickets.Service\Chap6.EventTickets.Service.csproj">
+      <Project>{6F42FA22-0EC6-4C49-92E8-EBF1FCFE2B1C}</Project>
+      <Name>Chap6.EventTickets.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Chap6.EvetnTickets.Contract\Chap6.EvetnTickets.Contract.csproj">
+      <Project>{9A2548E9-B581-4468-8044-D1E63D93501F}</Project>
+      <Name>Chap6.EvetnTickets.Contract</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
   <ProjectExtensions>
