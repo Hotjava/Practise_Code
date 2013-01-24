@@ -1,6 +1,6 @@
 ﻿using System;
 using System.ServiceModel.Activation;
-using Chap6.EvetnTickets.Contract;
+using Chap6.EventTickets.Contract;
 using Chap6.EventTickets.DataContract;
 using Chap6.EventTickets.Repository;
 using EventTickets.Model;

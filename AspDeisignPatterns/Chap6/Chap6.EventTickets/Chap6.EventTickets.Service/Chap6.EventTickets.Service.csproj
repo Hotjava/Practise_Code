@@ -56,9 +56,9 @@
       <Project>{077068A0-EB94-4F1E-ACC5-518C049BD11B}</Project>
       <Name>Chap6.EventTickets.Repository</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Chap6.EvetnTickets.Contract\Chap6.EvetnTickets.Contract.csproj">
+    <ProjectReference Include="..\Chap6.EvetnTickets.Contract\Chap6.EventTickets.Contract.csproj">
       <Project>{9A2548E9-B581-4468-8044-D1E63D93501F}</Project>
-      <Name>Chap6.EvetnTickets.Contract</Name>
+      <Name>Chap6.EventTickets.Contract</Name>
     </ProjectReference>
     <ProjectReference Include="..\EventTickets.Model\EventTickets.Model.csproj">
       <Project>{E65A2A86-DB9F-44E2-9493-A3DDE02103BF}</Project>

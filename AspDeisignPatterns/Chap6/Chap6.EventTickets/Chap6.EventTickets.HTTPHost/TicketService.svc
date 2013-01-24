@@ -1,1 +1,0 @@
-﻿<%@ ServiceHost Language="C#" Debug="true" Service="Chap6.EventTickets.HTTPHost.TicketService" CodeBehind="Chap6.EventTickets.Service.TicketService.cs" %>

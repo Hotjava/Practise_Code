@@ -1,6 +1,6 @@
 ﻿using System.ServiceModel;
-using Chap6.EventTickets.DataContract;
-using Chap6.EvetnTickets.Contract;
+using Chap6.EventTickets.Contract;
+using Chap6.EventTickets.Datantract;
 
 namespace Chap6.EventTickets.ServiceProxy
 {

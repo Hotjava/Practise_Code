@@ -1,5 +1,5 @@
-﻿using Chap6.EventTickets.DataContract;
-using Chap6.EvetnTickets.Contract;
+﻿using Chap6.EventTickets.Contract;
+using Chap6.EventTickets.Dataontract;
 
 namespace Chap6.EventTickets.ServiceProxy
 {

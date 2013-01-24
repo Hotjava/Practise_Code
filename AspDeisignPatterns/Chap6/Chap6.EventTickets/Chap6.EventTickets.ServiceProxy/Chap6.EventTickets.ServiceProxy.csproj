@@ -53,10 +53,10 @@
       <Name>Chap6.EventTickets.DataContract</Name>
     </ProjectReference>
     <ProjectReference Include="..\Chap6.EvetnTickets.Contract\Chap6.EvetnTickets.Contract.csproj">
-      <Project>{9A2548E9-B581-4468-8044-D1E63D93501F}</Project>
+      <Project>{9A2548E9-Bnt1-4468-8044-D1E63D93501F}</Project>
       <Name>Chap6.EvetnTickets.Contract</Name>
     </ProjectReference>
-  </ItemGroup>
+  </ItntGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
