@@ -34,6 +34,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
+    <Reference IncludeWebm.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
@@ -41,11 +42,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Basket\IBasket.cs" />
+    <Compile Include="CategBasket.cs" /" />
     <Compile Include="CategoryProductPresenter.cs" />
     <Compile Include="ICategoryProductView.cs" />
     <Compile Include="IHomeView.cs" />
     <Compile Include="HomePagePresenter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+ IProductDetailView.cs" />
+    <Compile Include="Navigation\IPageNavigator.cs" />
+    <Compile Include="Navigation\PageDirectory.cs" />
+    <Compile Include="Navigation\PageNavigatomblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Chap8.MVP.Model\Chap8.MVP.Model.csproj">
