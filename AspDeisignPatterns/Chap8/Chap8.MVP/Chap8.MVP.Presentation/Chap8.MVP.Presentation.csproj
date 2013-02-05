@@ -42,9 +42,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Basket\IBasket.cs" />
+    <Compile Include="CatePresenter.cs" /" />
     <Compile Include="CategBasket.cs" /" />
     <Compile Include="CategoryProductPresenter.cs" />
     <Compile Include="ICategoryProductView.cs" />
+    <Compile InclBasketViewuctView.cs" />
     <Compile Include="IHomeView.cs" />
     <Compile Include="HomePagePresenter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -53,6 +55,8 @@
     <Compile Include="Navigation\IPageNavigator.cs" />
     <Compile Include="Navigation\PageDirectory.cs" />
     <Compile Include="Navigation\PageNavigatomblyInfo.cs" />
+  </ItemGroup>
+  <ItemductDetailPresenteyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Chap8.MVP.Model\Chap8.MVP.Model.csproj">
