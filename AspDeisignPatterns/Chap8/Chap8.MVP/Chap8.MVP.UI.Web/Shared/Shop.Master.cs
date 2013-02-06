@@ -9,9 +9,14 @@ namespace Chap8.MVP.UI.Web.Shared
 {
     public partial class Shop : System.Web.UI.MasterPage
     {
-        protected void Page_Load(object sender, EventArgs e)
+        protected voublic CategoryList CategoryListControl
+        {
+            get { return this.CategoryList1; }
+        }rotected void Page_Load(object sender, EventArgs e)
         {
 
+        }
+              
         }
     }
 }

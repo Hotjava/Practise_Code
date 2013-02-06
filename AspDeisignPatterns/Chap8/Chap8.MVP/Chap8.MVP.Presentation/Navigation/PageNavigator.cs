@@ -10,7 +10,7 @@ namespace Chap8.MVP.Presentation.Navigation
             switch (page)
             {
                 case PageDirectory.Basket:
-                        HttpContCurrent.Response.Redirect("/Views/Basket/Basket.aspx");
+                        HttpContCurrent.Response.Redirect("/Views/BasketProducx");
                     break;
                     
                 default:

@@ -9,8 +9,8 @@ namespace Chap8.MVP.Presentation
     public interface IProductDetailView
     {
         int ProductId { get; set; }
-        string Name { get; set; }
-        decimal Price { set; }
+    }
+        string Name {     decimal Price { set; }
         string Description { set; }
         IEnumerable<Category> CategoryList { set; }
     }

@@ -55,7 +55,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Web.config" />
-    <Content Include="Web.Debug.configHome\Index.aspx" />
+    <Content Include="Web.Debug.configHoGlobal.asax" /clude="Web.Debug.configHome\Index.aspx" />
+    <Content Include="ShaProduct\Basket.aspx" />
+    <Content Include="Product\CategoryProducts.aspx" />
+    <Content Include="Product\ProductDetailspx" />
     <Content Include="Shared\CategoryList.ascx" />
     <Content Include="Shared\ProductList.ascx" /Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -68,12 +71,38 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+  HomeBootStrapper.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compileoup>
+  <ItemGroup>
   Home\Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Home\Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Assduct\Basket.aspx.cs">
+      <DependentUpon>Basket</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\IndProduct\Basket.aspx.designer.cs">
+      <DependentUpon>Basket.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\CategoryProducts.aspx.cs">
+      <DependentUpon>CategoryProducts</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\IndProduct\CategoryProducts.aspx.designer.cs">
+      <DependentUpon>CategoryProducts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\ProductDetail.aspx.cs">
+      <DependentUpon>ProductDetail</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\IndProduct\ProductDetail.aspx.designer.cs">
+      <DependentUpon>ProductDetailpendentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Shared\CategoryList.ascx.cs">
@@ -119,9 +148,7 @@
   <ItemGroup>
     <Folder Include="Basket\" />
     <Folder Include="Product\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Shared\Shop.Master" / />
+  </It Include="Shared\Shop.Master" / />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
   <ProjectExtensions>
     <VisualStudio>

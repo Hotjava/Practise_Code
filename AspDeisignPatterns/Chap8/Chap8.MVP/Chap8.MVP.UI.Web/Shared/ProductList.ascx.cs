@@ -15,10 +15,16 @@ namespace Chap8.MVP.UI.Web.Shared
             
         }
 
-        public void SetProductToDisplay(IEnumerable<Product> products)
+        public void SetProductToDisplay(IEnumerable<Product> productsModel.)
         {
             this.rptProducts.DataSource = products; 
             this.rptProducts.DataBind();
+        }
+    }
+}
+        protected void rptProducts_ItemCommand(object source, RepeaterCommandEventArgs e)
+        {
+
         }
     }
 }

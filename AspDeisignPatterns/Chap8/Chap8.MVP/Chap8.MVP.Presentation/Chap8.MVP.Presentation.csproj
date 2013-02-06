@@ -52,6 +52,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
  IProductDetailView.cs" />
+    <Compile Include="NIProductListView.cs" />
     <Compile Include="Navigation\IPageNavigator.cs" />
     <Compile Include="Navigation\PageDirectory.cs" />
     <Compile Include="Navigation\PageNavigatomblyInfo.cs" />

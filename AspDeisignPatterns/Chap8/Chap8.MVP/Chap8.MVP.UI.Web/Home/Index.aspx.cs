@@ -6,7 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using Chap8.MVP.Model;
 using Chap8.MVP.Presentation;
-using StructureMap;
+using StructurChap8.MVP.UI.Web.Shared StructureMap;
 
 namespace Chap8.MVP.UI.Web.Home
 {
@@ -19,12 +19,26 @@ namespace Chap8.MVP.UI.Web.Home
             
         }
 
-        protected void Page_Load(object sender, EventArgs e)
-        {
-
+      _presenter = new HomePagePresenter(this, ObjectFactory.GetInstance<ProductService>());
         }
 
-        public IEnumerable<Product> TopSellingProduct { set; private get; }
-        public IEnumerable<Category> CategoryList { set; private get; }
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            _presenter.Display();
+        }
+
+        public IEnumerable<Model.Product> TopSellingProduct
+        {
+            set
+            {
+                plBestSellingProducts.SetProductToDisplay(value);
+            }
+        }
+        public IEnumerable<Category> CategoryList { 
+            set { 
+                Shop shopMasterPage = (Shop) Page.Master;
+                shopMasterPage.CategoryListControl.SetCategoriesToDisplay(value);
+            } 
+        }
     }
 }

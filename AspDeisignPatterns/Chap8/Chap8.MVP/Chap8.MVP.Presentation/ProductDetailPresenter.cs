@@ -44,8 +44,9 @@ namespace Chap8.MVP.Presentation
     }
 
     public interface IProductDetailPresenter
-    {
-        void Display();
-        void AddProductToBasketAndShowBasketPage();
-    }
+        public interface IProductDetailPresenter
+        {
+            void Display();
+            void AddProductToBasketAndShowBasketPage();
+        }
 }

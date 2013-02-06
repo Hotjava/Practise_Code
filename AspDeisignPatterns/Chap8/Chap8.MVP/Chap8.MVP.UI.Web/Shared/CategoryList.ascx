@@ -5,8 +5,7 @@
     </HeaderTemplate>
         <ItemTemplate>
             <li>
-                <a href="/Views/Product/CategoryProducts.aspx?CategoryId=<%# Eval("Id") %>"></a>
-            </li>
+                <a href="/Views/PProduct/CategoryProducts.aspx?CategoryId=<%# Eval("Id") %>"><%# Eval("Name") %           </li>
         </ItemTemplate>
     <FooterTemplate>
         </ul>
