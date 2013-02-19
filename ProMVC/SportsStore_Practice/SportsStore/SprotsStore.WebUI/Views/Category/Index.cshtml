@@ -1,0 +1,11 @@
+﻿@model IEnumerable<SportsStore.Domain.Entities.Category>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+@foreach( var p in Model)
+{
+    <h2>@p.Name</h2>
+}
