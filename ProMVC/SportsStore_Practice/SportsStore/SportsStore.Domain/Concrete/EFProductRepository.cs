@@ -22,7 +22,19 @@ namespace SportsStore.Domain.Concrete
                         select new Category {Name = p.Category};
                  return c.Distinct();
             }
-        } 
+        }
+
+        public void SaveProduct(Product p)
+        {
+            if (p.ProductID == 0)
+            {
+                context.Products.Add(p);
+            }
+            context.SaveChanges();
+
+
+
+        }
 
         #endregion
     }

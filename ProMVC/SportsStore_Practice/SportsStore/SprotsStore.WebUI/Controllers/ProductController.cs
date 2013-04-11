@@ -25,19 +25,18 @@ namespace SportsStore.WebUI.Controllers
         public ViewResult List(string category, int page=1)
         {
 
+            var product = (IEnumerable<Product>)
+                          _productRepository.Products.Where(p => category == null || p.Category == category);
             ProductListViewModel model = new ProductListViewModel()
                                              {
-                                                 Products =
-                                                     (IEnumerable<Product>)
-                                                     _productRepository.Products.Where(p=>p.Category==null||p.Category==category)
-                                                     .OrderBy(p => p.ProductID).Skip((page -1)*PageSize)
+                                                 Products = product.OrderBy(p => p.ProductID).Skip((page -1)*PageSize)
                                                      .Take(PageSize),
                                                  PageInfo =
                                                      new PageInfo()
                                                          {
                                                              CurrentPage = page,
                                                              ItemPerPage = PageSize,
-                                                             TotalItem = _productRepository.Products.Count()
+                                                             TotalItem = product.Count()
                                                          },
                                                  CurrentCategory = category
 
